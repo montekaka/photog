@@ -30,3 +30,21 @@ func setupParse(){
 }
 ```
 
+Create a StartViewController file inherts from UIViewController with a xib file, and then add the following code
+```swift
+var startViewController = StartViewController(nibName:"StartViewController", bundle:nil)
+
+if PFUser.currentUser() == nil{
+    // TODO: present the main UI
+    navigationController.viewControllers = [startViewController]
+}
+else{
+    // TODO: Present UI for logging in or creating an account
+    println("We have an user")
+}
+    self.window!.rootViewController = navigationController
+    self.window!.makeKeyAndVisible()    
+```
+
+## Day 5
+Adding buttons to the login screen
