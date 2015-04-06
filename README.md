@@ -48,3 +48,12 @@ else{
 
 ## Day 5
 Adding buttons to the login screen
+
+## Day 6
+Add sign in and sign up buttons functions and connect them to the UI
+e.g.
+```swift
+@IBAction func didTapSignIn(sender: AnyObject){
+
+}
+```
