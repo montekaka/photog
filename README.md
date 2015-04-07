@@ -54,6 +54,10 @@ Add sign in and sign up buttons functions and connect them to the UI
 e.g.
 ```swift
 @IBAction func didTapSignIn(sender: AnyObject){
-
+    var viewController = AuthViewController(nibName:"AuthViewController", bundle:nil)
+    self.navigationController!.pushViewController(viewController, animated: true)
 }
 ```
+
+Add AuthViewContrller.swift
+
